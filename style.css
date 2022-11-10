@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+html {
+  background-image: url("images/bg-desktop.png");
+  background-color: hsl(229, 57%, 11%);
+  background-repeat: repeat;
+  background-position: left;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.storage-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.compo-1 {
+  width: 270px;
+  height: 180px;
+  background: hsl(228, 56%, 26%);
+  border-top-right-radius: 80px;
+}
+
+.logo {
+  padding: 3rem;
+}
+
+.logo img {
+  max-width: 9.45rem;
+}
+
+.icons {
+  background: hsl(229, 57%, 11%);
+}
+
+.icons img {
+  max-width: 1.8rem;
+}
+
+.icon1 img {
+  max-height: 1.5rem;
+}
+
+.graphics-icons {
+  display: inline-flex;
+  padding-left: 1.5rem;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  margin-top: -1rem;
+  padding: 0.85rem;
+  margin-left: 1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 0.44rem;
+}
+
+/*Second Component of Storage*/
+
+.compo-2 {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  width: 30rem;
+  height: 9rem;
+  background: hsl(228, 56%, 26%);
+  border-radius: 0.49rem;
+  text-align: left;
+}
+
+.compo-2 h1,
+.progress-bar p {
+  color: hsl(229, 35%, 69%);
+}
+
+p {
+  word-spacing: 17rem;
+  font-weight: 700;
+}
+
+.progress-bar {
+  margin-top: 1rem;
+  width: 350px;
+  height: 20px;
+  background: hsl(229, 57%, 11%);
+  border-radius: 50px;
+}
+
+.progress-fill {
+  animation: progress 1s ease;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 30px;
+}
+
+.progress-text {
+  margin-top: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 360px) and (max-width: 900px) {
+  html {
+    background-image: url("images/bg-mobile.png");
+    background-color: hsl(229, 57%, 11%);
+  }
+
+  .storage-data {
+    flex-direction: column;
+  }
+  .compo-2 {
+    width: 23rem;
+    height: 9rem;
+    margin-right: 1.55rem;
+  }
+
+  .progress-bar {
+    width: 300px;
+  }
+
+  p {
+    word-spacing: 15rem;
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 20%;
+    height: 100%;
+  }
+
+  50% {
+    width: 40%;
+    height: 100%;
+  }
+
+  70% {
+    width: 60%;
+    height: 100%;
+  }
+
+  100% {
+    width: 80%;
+    height: 100%;
+  }
+}
