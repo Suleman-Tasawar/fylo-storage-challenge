@@ -1,26 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/*For the CSS reset*/
 * {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
+
+/*These styles will apply to the entire body*/
 
 html {
   background-image: url("images/bg-desktop.png");
   background-color: hsl(229, 57%, 11%);
   background-repeat: repeat;
-  background-position: left;
-  background-size: cover;
   min-height: 100%;
 }
+
+/*The hero section of the Storage Component*/
 
 .storage-data {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: "Raleway", sans-serif;
 }
+
+/*For the first container containing the logo and the icons*/
 
 .compo-1 {
   width: 270px;
@@ -33,12 +39,10 @@ html {
   padding: 3rem;
 }
 
+/*For the Logo image and the icon images*/
+
 .logo img {
   max-width: 9.45rem;
-}
-
-.icons {
-  background: hsl(229, 57%, 11%);
 }
 
 .icons img {
@@ -49,6 +53,10 @@ html {
   max-height: 1.5rem;
 }
 
+.icons {
+  animation: float infinite 2s ease-in;
+  background: hsl(229, 57%, 11%);
+}
 .graphics-icons {
   display: inline-flex;
   padding-left: 1.5rem;
@@ -89,6 +97,8 @@ p {
   font-weight: 700;
 }
 
+/*For the process bar*/
+
 .progress-bar {
   margin-top: 1rem;
   width: 350px;
@@ -109,6 +119,8 @@ p {
   margin-top: 1rem;
 }
 
+/*The Arrtibution at the end*/
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -116,6 +128,8 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/*To fit the entire content on the screen regardless of the dimension*/
 
 @media screen and (min-width: 360px) and (max-width: 900px) {
   html {
@@ -140,7 +154,20 @@ p {
     word-spacing: 15rem;
   }
 }
+/*For the animation of the icons*/
 
+@keyframes float {
+  from {
+    margin-top: -1rem;
+    transition: 1s;
+  }
+
+  to {
+    margin-top: 0;
+    transition: 1s;
+  }
+}
+/*For the Process Bar Animation*/
 @keyframes progress {
   0% {
     width: 20%;
